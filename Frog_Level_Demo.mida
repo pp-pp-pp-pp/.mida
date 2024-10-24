@@ -42,7 +42,7 @@ Dawbreii} *Program;#Chorus*
 
 ! Hacks ! *Preprocessor*
 Plug Depth; *Program ^*~> Assert.' Depth ^*~> Plug*
-Exception:-: **mida --integrate*~*safe**
+Exception:-: *mida --integrate*~*safe*
 || This code block makes sure everything that is playing music has a virtual instrument. *mida --integrate*~*safe* is what does that. 
 || This is like using a assert exception as a upgraded betrayed confidence block, since betrayed confidence blocks usually do something INSTEAD of the main code but act BEFORE the runtime execution, we have to use ! Hacks ! to access the preprocessor since we are doing this AFTER we have already typed all the code above us. This lets us put this code down here instead of at the top, but we could just put it at the top |>
 
