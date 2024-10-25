@@ -25,7 +25,7 @@ Mida’s logic is refreshingly free-form and minimalistic compared to traditiona
 
    - Example:
      ```mida
-     Automation ^*~> Chain + Verb + Echo* || 
+     Automation: *Chain ^*~> Verb + Echo* 
      ```
    - Here, *Automation* can “float” through multiple states (Verb and Echo) without ever needing to explicitly reconfigure them in sequence. There’s no need to define every single possibility; instead, you’re creating an interplay where interactions trigger only as they overlap.
 
@@ -34,7 +34,10 @@ Mida’s logic is refreshingly free-form and minimalistic compared to traditiona
 
    - Example of effortless modularity:
      ```mida
-     Audicle; *A4*~Betrayed: **Confidence; *Chain + Echo*
+     Audicle: *A4*
+     Bloodline; *Audicle ^*~> Betrayed*
+     Betrayed.' *Audicle*
+     Confidence:-: *Chain + Echo*
      ```
    - Rather than routing the flow through many conditions, *Betrayed* only arises if *A4* is in a failed state, causing *Confidence* to handle it automatically, avoiding a rigid flow that would otherwise necessitate extra conditions.
 
